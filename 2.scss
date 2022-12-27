@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #606060;
+
+
+
+    header {
+        background: #292929;
+        overflow: hidden;
+
+        .center-block-main {
+            margin: 0 auto;
+            max-width: 990px;
+
+            .logo {
+                float: left;
+                margin-top: 45px;
+            }
+
+            .menu {
+                float: right;
+
+                li {
+                    float: left;
+                    font-weight: 600;
+                }
+
+                li {
+                    a {
+                        color: white;
+                        text-decoration: none;
+                        padding: 50px 35px;
+                        display: block;
+                        /* ссылка - строчный элемент. Для того, чтобы применились все paddings к ней, надо назначить display:block*/
+                        border-bottom: #292929 3px solid;
+
+                        &:hover {
+                            color: #58c93a;
+                            border-bottom: #58c93a 3px solid;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    main {
+        float: left;
+        margin-top: 70px;
+        width: 62.5%;
+
+        article {
+            &>header {
+                font-size: 0;
+                background: none;
+                /*но лучше было бы просто в хедер основной добавить класс*/
+                margin-bottom: 10px;
+            }
+
+            h2 {
+                font-size: 1.75em;
+                /* 1 em = 16 шрифт*/
+                font-weight: bold;
+                text-transform: uppercase;
+                /* все буквы большие*/
+                line-height: 1.1;
+                /* межстрочный интервал*/
+                margin: 0px 0px 40px 20px;
+                color: #4f4e4e;
+            }
+
+            p {
+                margin: 0 0 20px 20px;
+                line-height: 1.3;
+            }
+            a.more{
+                border: 2px solid #c2c2c2;
+                padding: 7px 20px;
+                display: inline-block;
+                border-radius: 20px;
+                color: #c2c2c2;
+                &:hover{
+                    color: #339933;
+                    border-color: #339933;
+                    text-decoration: underline;
+                }
+            }
+
+
+            margin-bottom: 70px;
+        }
+    }
+
+    aside {
+        margin-top: 70px;
+        float: right;
+        width: 28.3%;
+    }
+}
