@@ -80,4 +80,47 @@ body aside {
   margin-top: 70px;
   float: right;
   width: 28.3%;
+}
+body aside .widget {
+  margin-bottom: 50px;
+  /* чтобы только к тегу нав в классе виджет*/
+}
+body aside .widget h2 {
+  text-transform: uppercase;
+  color: #6c6969;
+  background: #f8f8f8;
+  border-left: 3px solid #58c93a;
+  padding: 10px 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+body aside .widget .search {
+  color: #b9b9b9;
+  font-size: 0.75em;
+  width: 100%;
+  border: 1px solid #e1e0e0;
+  padding: 15px 20px;
+}
+body aside .widget > nav {
+  margin-left: 20px;
+}
+body aside .widget .subscribe {
+  position: relative;
+  width: 100%;
+  height: 48px;
+}
+body aside .widget .subscribe-input {
+  font-size: 0.75em;
+  color: #b9b9b9;
+  width: 100%;
+  padding: 15px 50px 15px 20px;
+  border: 1px solid #e1e0e0;
+  box-sizing: border-box;
+  /* для нашего блока ширина сразу включает и бордер и паддинг*/
+  position: absolute;
+}
+body aside .widget .subscribe-image {
+  position: absolute;
+  right: 20px;
+  top: 12px;
 }/*# sourceMappingURL=2.css.map */
