@@ -50,7 +50,10 @@ body {
     .center-block-main {
         max-width: 990px;
         margin: 0 auto;
-
+        &.content {
+            border-right: 1px solid #e1e0e0;
+            border-left: 1px solid #e1e0e0;
+        }
         main {
             float: left;
             margin-top: 70px;
@@ -124,6 +127,7 @@ body {
                     width: 100%;
                     border: 1px solid #e1e0e0;
                     padding: 15px 20px;
+                    border-right: none;
                 }
 
                 &>nav {
@@ -146,6 +150,7 @@ body {
                     box-sizing: border-box;
                     /* для нашего блока ширина сразу включает и бордер и паддинг*/
                     position: absolute;
+                    border-right: none;
                 }
 
                 .subscribe-image {
@@ -185,16 +190,19 @@ body {
                 float: right;
             }
         }
+       
 
     }
-    footer{
+
+    footer {
         background: #f8f8f8;
         border-top: 1px solid #e1e0e0;
         text-align: center;
         font-size: 0.8125em;
         padding: 50px 0;
-        img{
-        margin-bottom: 20px auto;
+
+        img {
+            margin-bottom: 20px auto;
         }
     }
 

@@ -39,6 +39,10 @@ body .center-block-main {
   max-width: 990px;
   margin: 0 auto;
 }
+body .center-block-main.content {
+  border-right: 1px solid #e1e0e0;
+  border-left: 1px solid #e1e0e0;
+}
 body .center-block-main main {
   float: left;
   margin-top: 70px;
@@ -104,6 +108,7 @@ body .center-block-main aside .widget .search {
   width: 100%;
   border: 1px solid #e1e0e0;
   padding: 15px 20px;
+  border-right: none;
 }
 body .center-block-main aside .widget > nav {
   margin-left: 20px;
@@ -122,6 +127,7 @@ body .center-block-main aside .widget .subscribe-input {
   box-sizing: border-box;
   /* для нашего блока ширина сразу включает и бордер и паддинг*/
   position: absolute;
+  border-right: none;
 }
 body .center-block-main aside .widget .subscribe-image {
   position: absolute;
