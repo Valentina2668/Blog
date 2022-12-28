@@ -83,20 +83,32 @@
                 Stay Tuned.
             </h2>
             <div class="subscribe">
-            <form action="" method="get">
-                <input type="email" placeholder="Your Email" class="subscribe-input">
-                <input type="image" src="images/sbcr-btn.jpg" class="subscribe-image">
-            </form>    
+                <form action="" method="get">
+                    <input type="email" placeholder="Your Email" class="subscribe-input">
+                    <input type="image" src="images/sbcr-btn.jpg" class="subscribe-image">
+                </form>
             </div>
-            
+
         </div>
         <div class="widget">
             <h2>
                 <img src="images/banner.jpg" alt="banner">
             </h2>
         </div>
-
     </aside>
+    <div class="clr"></div>
+    <!--Класс clear был в reset css и он как-бы подводит черту после сфлоученых вдух колонок, и все после него уже располагается дольше внизу. Под всем-->
+    <div class="pager clearfix">
+        <!-- Добавляем еще один класс через пробел clerfix из reset css позволяет решать проблему сфлоучнных границ для элементов. И вот наш div обладает всеми свойствами класса pager и clearfix. Как бы без проблем можно написать хоть 10 классов через пробел-->
+        <p class="previous-link">&larr; <a href="#">Previous</a></p>
+        <p class="next-link"> <a href="#">Next &rarr;</a></p>
+    </div>
 </div>
+<footer>
+    <div class="center-block-main">
+        <a href="/"><img src="images/logo-ftr.jpg" alt="/"></a>
+        <p>&copy; 2016 Blogin.com  -  All Rights Reserved  -  Find more free Templates at Pixelhint.com </p>
+    </div>
+</footer>
 
 </html>
