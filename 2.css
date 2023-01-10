@@ -1,5 +1,40 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+@media screen and (max-width: 768px) {
+  header .logo {
+    margin-top: 20px;
+  }
+  header .manu li a {
+    padding: 25px 35px;
+  }
+  .center-block-main main {
+    float: none;
+    width: 100%;
+    margin-top: 30px;
+  }
+  .center-block-main article > header img {
+    width: 100%;
+  }
+  .center-block-main aside {
+    float: none;
+    width: 100%;
+    margin-top: 70px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .logo {
+    float: none;
+    margin: 10px auto;
+    display: block;
+  }
+  .menu {
+    float: none;
+    width: 100%;
+  }
+  .menu li a {
+    padding: 10px 35px;
+  }
+}
 body {
   font-family: "Open Sans", sans-serif;
   color: #606060;
@@ -78,11 +113,12 @@ body .center-block-main main article a.more {
   display: inline-block;
   border-radius: 20px;
   color: #c2c2c2;
+  transition: all 0.1s linear;
 }
 body .center-block-main main article a.more:hover {
   color: #339933;
   border-color: #339933;
-  text-decoration: underline;
+  text-decoration: none;
 }
 body .center-block-main aside {
   margin-top: 70px;
